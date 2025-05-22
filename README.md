@@ -1,4 +1,4 @@
-# 🤖 Bayesian Neural Networks – Predictive Uncertainty Modeling
+# Bayesian Neural Networks – Predictive Uncertainty Modeling
 
 This project demonstrates how to model **predictive uncertainty** using **Bayesian Neural Networks (BNNs)** in Python. It applies two core techniques to quantify model confidence in both regression and classification tasks:
 
