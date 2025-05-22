@@ -1,4 +1,4 @@
-# 🤖 Quantifying Uncertainty in Predictions with Bayesian Neural Networks
+# Quantifying Uncertainty in Predictions with Bayesian Neural Networks
 
 This project demonstrates how to estimate **prediction uncertainty** using a **Bayesian Neural Network (BNN)**. It explores two main methods—**prediction variance** and **entropy**—to provide better insight into the reliability of neural network predictions.
 
