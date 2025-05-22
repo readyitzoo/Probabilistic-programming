@@ -1,68 +1,33 @@
-# Quantifying Uncertainty in Predictions with Bayesian Neural Networks
+# 🤖 Bayesian Neural Networks – Predictive Uncertainty Modeling
 
-This project demonstrates how to estimate **prediction uncertainty** using a **Bayesian Neural Network (BNN)**. It explores two main methods—**prediction variance** and **entropy**—to provide better insight into the reliability of neural network predictions.
+This project demonstrates how to model **predictive uncertainty** using **Bayesian Neural Networks (BNNs)** in Python. It applies two core techniques to quantify model confidence in both regression and classification tasks:
 
----
-
-## 📌 Objectives
-
-- Implement and interpret uncertainty measures in BNNs
-- Distinguish between **epistemic** and **aleatoric** uncertainty
-- Use prediction variance and entropy to improve decision-making in machine learning models
+- 📈 **Prediction Variance** (Task 2) — Estimates **epistemic uncertainty** by analyzing output variability across multiple forward passes.
+- 🤔 **Entropy of Class Probabilities** (Task 3) — Measures uncertainty in classification predictions using **Shannon entropy**.
 
 ---
 
-## 🧠 Methods
+## 🧠 Why It Matters
 
-### 1. **Prediction Variance**
-- Applies to regression and classification
-- Captures **epistemic uncertainty** (due to model parameters)
-- Estimated by sampling from the posterior distribution:
-  
-  \[
-  \text{Var}(y) = \frac{1}{N} \sum_{i=1}^N (y_i - \bar{y})^2
-  \]
+Uncertainty quantification is critical in high-stakes AI systems where confident decisions are essential — from healthcare to autonomous systems. This project showcases how to:
 
-- **Interpretation:**
-  - Low variance → confident prediction
-  - High variance → uncertainty due to lack of knowledge
-
----
-
-### 2. **Entropy of Predictive Distribution**
-- Applies to classification tasks
-- Measures **total uncertainty** over predicted class probabilities using Shannon entropy:
-
-  \[
-  H(p) = -\sum_{i=1}^C p_i \log p_i
-  \]
-
-- **Interpretation:**
-  - Low entropy → one class dominates → confident prediction
-  - High entropy → prediction is uncertain across multiple classes
-
----
-
-## 📊 Combined Uncertainty
-Using both methods:
-- For **regression** → use prediction mean ± variance
-- For **classification** → assess both entropy and prediction confidence (e.g., top-1 probability)
-
+- Improve trust in ML models by quantifying confidence
+- Use **MC Dropout** for Bayesian inference without altering standard neural architectures
+- Interpret model behavior beyond accuracy using **entropy**, **variance**, and **F1 Score**
 
 ---
 
 ## 🛠️ Tools Used
 
-- Python 3
-- PyTorch / TensorFlow (BNN implementation assumed)
-- `matplotlib`, `numpy`, `scipy`, `torch.nn.functional`
+- Python, PyTorch, NumPy
 - Jupyter Notebooks
+- `torch.nn.functional`, `scikit-learn`, `matplotlib`
 
 ---
 
 ## 👨‍💻 Author
 
-- [Mihai Dilirici](mailto:mihai.dilirici@s.unibuc.ro)
+- **Mihai Dilirici** — [Email](mailto:mihai.dilirici@s.unibuc.ro)
 
 ---
 
